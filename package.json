@@ -1,0 +1,20 @@
+{
+  "name": "cs3200-project2",
+  "version": "1.0.0",
+  "description": "Second Project for Spring 2024 Database Design",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "queries": "node query1.js && node query2.js && node query3.js && node query4.js && node query5.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-prettier": "^0.0.0-empty",
+    "prettier": "^3.2.5"
+  }
+}

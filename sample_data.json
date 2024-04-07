@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 1,
+    "item_name": "Item 1",
+    "category": "Category 1",
+    "image": "<binary data>",
+    "prices": [
+      {
+        "store": {
+          "store_id": 1,
+          "name": "Store Name 1",
+          "geolocation": {
+            "location_id": 1,
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "name_of_location": "New York City"
+          },
+          "expense_rating": "High",
+          "culture_specialty": "Specialty Name"
+        },
+        "price": 10.99,
+        "timestamp": "2024-04-07T12:00:00Z"
+      }
+    ]
+  }
+]

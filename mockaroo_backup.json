@@ -1,0 +1,135 @@
+{
+  "id": 610336,
+  "num_rows": 1000,
+  "file_format": "json",
+  "name": "mongo - items",
+  "array": true,
+  "columns": [
+    {
+      "name": "item_id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": null
+    },
+    {
+      "name": "item_name",
+      "null_percentage": 0,
+      "type": "Product (Grocery)",
+      "formula": null
+    },
+    {
+      "name": "category",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "condiment",
+        "snacks",
+        "produce",
+        "misc",
+        "food"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "image",
+      "null_percentage": 0,
+      "type": "Base64 Image URL",
+      "formula": null
+    },
+    {
+      "name": "prices",
+      "null_percentage": 0,
+      "type": "JSON Array",
+      "minItems": 0,
+      "maxItems": 5,
+      "formula": null
+    },
+    {
+      "name": "prices.store.store_id",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 100,
+      "decimals": 0,
+      "formula": null
+    },
+    {
+      "name": "prices.store.name",
+      "null_percentage": 0,
+      "type": "Fake Company Name",
+      "formula": null
+    },
+    {
+      "name": "prices.store.geolocation.location_id",
+      "null_percentage": 0,
+      "type": "Row Number",
+      "formula": null
+    },
+    {
+      "name": "prices.store.geolocation.latitude",
+      "null_percentage": 0,
+      "type": "Latitude",
+      "formula": null
+    },
+    {
+      "name": "prices.store.geolocation.longitude",
+      "null_percentage": 0,
+      "type": "Longitude",
+      "formula": null
+    },
+    {
+      "name": "prices.store.geolocation.name_of_location",
+      "null_percentage": 0,
+      "type": "Street Name",
+      "formula": null
+    },
+    {
+      "name": "prices.store.expense_rating",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "cheap",
+        "average",
+        "expensive",
+        "very expensive"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "prices.store.culture_specialty",
+      "null_percentage": 30,
+      "type": "Custom List",
+      "values": [
+        "asian",
+        "colombian",
+        "african",
+        "european"
+      ],
+      "selectionStyle": "random",
+      "distribution": null,
+      "formula": null
+    },
+    {
+      "name": "prices.price",
+      "null_percentage": 0,
+      "type": "Number",
+      "min": 1,
+      "max": 20,
+      "decimals": 1,
+      "formula": null
+    },
+    {
+      "name": "prices.timestamp",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "04/07/2023",
+      "max": "04/07/2024",
+      "format": "%-m/%-d/%Y",
+      "formula": null
+    }
+  ]
+}
