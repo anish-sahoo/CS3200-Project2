@@ -21,13 +21,7 @@
       "name": "category",
       "null_percentage": 0,
       "type": "Custom List",
-      "values": [
-        "condiment",
-        "snacks",
-        "produce",
-        "misc",
-        "food"
-      ],
+      "values": ["condiment", "snacks", "produce", "misc", "food"],
       "selectionStyle": "random",
       "distribution": null,
       "formula": null
@@ -89,12 +83,7 @@
       "name": "prices.store.expense_rating",
       "null_percentage": 0,
       "type": "Custom List",
-      "values": [
-        "cheap",
-        "average",
-        "expensive",
-        "very expensive"
-      ],
+      "values": ["cheap", "average", "expensive", "very expensive"],
       "selectionStyle": "random",
       "distribution": null,
       "formula": null
@@ -103,12 +92,7 @@
       "name": "prices.store.culture_specialty",
       "null_percentage": 30,
       "type": "Custom List",
-      "values": [
-        "asian",
-        "colombian",
-        "african",
-        "european"
-      ],
+      "values": ["asian", "colombian", "african", "european"],
       "selectionStyle": "random",
       "distribution": null,
       "formula": null
