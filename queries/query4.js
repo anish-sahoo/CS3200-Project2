@@ -21,11 +21,11 @@ const result = await coll.aggregate([
   }
 ]).toArray();
 
-console.log('Id'.padEnd(4),'|', 'Store Name'.padEnd(40),'|', 'Location'.padEnd(20),'|', 'Culture Specialty');
-console.log('-'.repeat(90));
+console.log('Id'.padEnd(4),'|', 'Store Name'.padEnd(40),'|', 'Location'.padEnd(16),'|', 'Expense Rating'.padEnd(15),'|', 'Culture Specialty');
+console.log('-'.repeat(108));
 result.sort((a, b) => a.store_id - b.store_id);
 result.forEach(store => {
-  console.log(store.store_id.toFixed(0).padEnd(4),'|', store.name.padEnd(40),'|', store.geolocation.name_of_location.padEnd(20),'|', store.culture_specialty);
+  console.log(store.store_id.toFixed(0).padEnd(4),'|', store.name.padEnd(40),'|', store.geolocation.name_of_location.padEnd(16),'|',store.expense_rating.padEnd(15),'|', store.culture_specialty);
 });
 
 await client.close();
