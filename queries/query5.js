@@ -33,7 +33,7 @@ const result = await coll.aggregate([
 result.sort((a, b) => a.store_id - b.store_id);
 
 console.log('Store Id'.padEnd(8),'|', 'Store Name'.padEnd(40),'|', 'Item Count'.padEnd(10),'|', 'Average Price');
-console.log('-'.repeat(68));
+console.log('-'.repeat(80));
 result.forEach(store => {
   console.log(store.store_id.toFixed(0).padEnd(8),'|', store.storeName.padEnd(40),'|', store.itemCount.toFixed(0).padEnd(10),'|', store.averagePrice.toFixed(2));
 });

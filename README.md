@@ -11,4 +11,4 @@ Second Project for Spring 2024 Database Design
 ### Data:
 
 - [Sample JSON data](sample_data.json)
-- [Dump File]()
+- [Dump File](dump/nearbyPrices/)
