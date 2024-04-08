@@ -18,17 +18,20 @@ const originalItemObj = originalItem.prices.find(price => price.store.store_id =
 console.log('\nOriginal price:', originalItemObj.price);
 console.log('\nUpdating price to 8.99');
 
-const result = await coll.updateOne(
-  {
-    "item_id": 2,
-    "prices.store.store_id": 291
-  },
-  {
-    $set: { "prices.$.price": 8.99, "prices.$.timestamp": new Date() }
-  }
-)
+const updatePrice = async (item_id, store_id, price) => {
+  const result = await coll.updateOne(
+    {
+      "item_id": item_id,
+      "prices.store.store_id": store_id
+    },
+    {
+      $set: { "prices.$.price": price, "prices.$.timestamp": new Date() }
+    }
+  )
+  console.log('Modified:', result.modifiedCount, '\n');
+}
 
-console.log('Modified:', result.modifiedCount, '\n');
+await updatePrice(2, 291, 8.99);
 
 const updatedItem = await coll.findOne({
   "item_id": 2,

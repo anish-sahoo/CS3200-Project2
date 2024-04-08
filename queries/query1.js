@@ -17,4 +17,4 @@ await client.close();
 
 
 // query 1: get count of items that are sold in Colombian grocery stores
-// query with aggregation framework
+// query with aggregation framework & counting all documents for a specific user
