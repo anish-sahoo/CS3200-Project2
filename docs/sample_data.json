@@ -20,6 +20,22 @@
         },
         "price": 10.99,
         "timestamp": "2024-04-07T12:00:00Z"
+      },
+      {
+        "store": {
+          "store_id": 2,
+          "name": "Store Name 2",
+          "geolocation": {
+            "location_id": 2,
+            "latitude": 34.0522,
+            "longitude": -118.2437,
+            "name_of_location": "Los Angeles"
+          },
+          "expense_rating": "Low",
+          "culture_specialty": "Specialty Name"
+        },
+        "price": 9.99,
+        "timestamp": "2024-04-07T12:00:00Z"
       }
     ]
   }

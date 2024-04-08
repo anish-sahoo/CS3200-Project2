@@ -16,5 +16,9 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-prettier": "^0.0.0-empty",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
   }
 }
