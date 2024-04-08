@@ -5,7 +5,7 @@ Second Project for Spring 2024 Database Design
 ## Documentation:
 
 - [UML Diagram]()
-- [Requirements Document]()
+- [Requirements Document](docs/design_document.pdf)
 - [MongoDB Collection Structure]()
 
 ### Data:
