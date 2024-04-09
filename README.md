@@ -33,3 +33,5 @@ mongoimport --db nearbyPrices --collection items --file dump/nearbyPrices/items.
 ```bash
 mongoimport --db nearbyPrices --collection users --file dump/nearbyPrices/users.bson
 ```
+- Run `npm install` in the project  directory
+- run queries by typing `node queries/query1.js` (replace 1 with the correct query number)
